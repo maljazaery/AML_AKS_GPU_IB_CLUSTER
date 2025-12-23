@@ -12,5 +12,5 @@ RUN mkdir /tmp/nccltests \
         MPI=1 MPI_HOME=/opt/hpcx/ompi \
         NVCC_GENCODE="-gencode=arch=compute_90,code=sm_90" \
         CUDA_HOME=/usr/local/cuda \
-    && cp ./build/* /usr/local/bin \
+    && cp -r ./build/* /usr/local/bin \
     && rm -rf /tmp/nccltests
